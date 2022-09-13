@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="#popup">
+      <span class="icon-cirqule">
+        <span class="ico ico-setting"></span>
+      </span>
+     
+    </span>
+    </a>
+      
+    <div class="quotation_column">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    
+      <a href="#popup_2"><button class="list__todo">To Do </button></a>
+   
+  </footer>
+  <div class="popup" id="popup">
+    <a href="#" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <a href="" class="popup__close">X</a>
+          <div class="popup__title">Setting</div>
+          <div class="radiobuttons">
+            <div class="radiobuttons__item active item__1">Time
+              <input type="radio" value="1" checked name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__2">Data
+              <input type="radio" value="2" name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__3">Greeting
+              <input type="radio" value="3" name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__4">Audioplayer
+              <input type="radio" value="4" name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__5">Weather
+              <input type="radio" value="5" name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__6">Quote
+              <input type="radio" value="6" name="nameradio">
+            </div>
+            <div class="radiobuttons__item active item__9">To-Do
+              <input type="radio" value="9" name="nameradio">
+            </div>
+
+            <div class=""><h3> Background sourse</h3>
+             
+            </div>
+            <div class="radiobuttons__item active item__7">Github
+              <input type="radio" value="7" name="nameradio">
+            </div>
+            <div class="radiobuttons__item  item__8">Unsplash API
+              <input type="radio" value="8" name="nameradio">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup_2" id="popup_2">
+    <a href="#header" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__container">
+        <div class="popup__content">
+          <a href="" class="popup__close">X</a>
+          <div>
+            <h2>My To Do List</h2>
+            <input type="text" placeholder="Title..." id="todoEl">
+            <span class="addButton" onclick="newElement()">Add</span>
+          </div>
+          <ul id="list">
+        
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/guote.js"></script>
+  <script src="js/audioplayer.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/translation.js"></script>
+  <script src="js/setting.js"></script>
+</body>
+</html>
